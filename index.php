@@ -1,6 +1,53 @@
 <?php
 session_start();
 
+// Form handling
+$form_message = '';
+$form_message_type = ''; // 'success' or 'error'
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
+    // Sanitize and validate form data
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $form_message = 'Invalid email address';
+        $form_message_type = 'error';
+    } elseif (empty($name) || empty($message)) {
+        $form_message = 'Please fill in all fields';
+        $form_message_type = 'error';
+    } else {
+        // Email configuration
+        $to = 'contact@imobx.md';
+        $subject = 'New Contact Form Submission from IMOBX.MD';
+        
+        // Build email content
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n";
+        $email_content .= "Message:\n$message\n";
+        $email_content .= "\n---\n";
+        $email_content .= "Sent from: " . $_SERVER['REMOTE_ADDR'];
+        $email_content .= " at " . date('Y-m-d H:i:s');
+        
+        // Email headers
+        $headers = "From: $name <$email>\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        
+        // Send email
+        if (mail($to, $subject, $email_content, $headers)) {
+            $form_message = 'Thank you! Your message has been sent successfully.';
+            $form_message_type = 'success';
+        } else {
+            $form_message = 'Sorry, there was an error sending your message. Please try again.';
+            $form_message_type = 'error';
+        }
+    }
+}
+
 // Language detection and handling
 $supported_languages = ['ru', 'ro', 'en'];
 $default_language = 'ru';
@@ -951,19 +998,22 @@ $contact_email = 'contact@imobx.md';
             transform: translateY(0);
         }
 
-        /* Form success message */
-        .form-success {
-            display: none;
-            background: var(--success-color);
-            color: white;
+        /* Form messages */
+        .form-message {
             padding: 15px;
             border-radius: 4px;
-            margin-top: 20px;
+            margin-bottom: 20px;
             text-align: center;
         }
 
-        .form-success.show {
-            display: block;
+        .form-message.success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .form-message.error {
+            background: #e53e3e;
+            color: white;
         }
     </style>
 </head>
@@ -1140,32 +1190,44 @@ $contact_email = 'contact@imobx.md';
                 </div>
 
                 <div class="contact-form">
-                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <?php if ($form_message): ?>
+                        <div class="form-message <?php echo $form_message_type; ?>">
+                            <?php 
+                            if ($form_message_type === 'success') {
+                                echo $current_lang === 'ru' ? 'Спасибо! Ваше сообщение отправлено.' : 
+                                     ($current_lang === 'ro' ? 'Mulțumim! Mesajul dvs. a fost trimis.' : 
+                                     'Thank you! Your message has been sent.');
+                            } else {
+                                echo $current_lang === 'ru' ? 'Ошибка: ' . $form_message : 
+                                     ($current_lang === 'ro' ? 'Eroare: ' . $form_message : 
+                                     'Error: ' . $form_message);
+                            }
+                            ?>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <form method="POST" action="">
+                        <input type="hidden" name="contact_form" value="1">
+                        
                         <div class="form-group">
                             <label for="name"><?php echo $t['form_name']; ?></label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required 
+                                   value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : ''; ?>">
                         </div>
                         
                         <div class="form-group">
                             <label for="email"><?php echo $t['form_email']; ?></label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required
+                                   value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
                         </div>
                         
                         <div class="form-group">
                             <label for="message"><?php echo $t['form_message']; ?></label>
-                            <textarea id="message" name="message" required></textarea>
+                            <textarea id="message" name="message" required><?php echo isset($_POST['message']) ? htmlspecialchars($_POST['message']) : ''; ?></textarea>
                         </div>
                         
                         <button type="submit" class="submit-btn"><?php echo $t['form_submit']; ?></button>
                     </form>
-                    
-                    <div id="formSuccess" class="form-success">
-                        <?php 
-                        echo $current_lang === 'ru' ? 'Спасибо! Ваше сообщение отправлено.' : 
-                             ($current_lang === 'ro' ? 'Mulțumim! Mesajul dvs. a fost trimis.' : 
-                             'Thank you! Your message has been sent.'); 
-                        ?>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1195,35 +1257,6 @@ $contact_email = 'contact@imobx.md';
             const currentUrl = new URL(window.location.href);
             currentUrl.searchParams.set('lang', lang);
             window.location.href = currentUrl.toString();
-        }
-
-        // Form submission handler
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            const form = document.getElementById('contactForm');
-            const successMessage = document.getElementById('formSuccess');
-            
-            // Simulate form submission
-            const formData = new FormData(form);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const message = formData.get('message');
-            
-            // Basic validation
-            if (name && email && message) {
-                // Show success message
-                successMessage.classList.add('show');
-                form.reset();
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    successMessage.classList.remove('show');
-                }, 5000);
-                
-                // Log form data (in production, this would be sent to server)
-                console.log('Form submitted:', { name, email, message });
-            }
         }
 
         // Smooth scroll for navigation links
@@ -1282,6 +1315,12 @@ $contact_email = 'contact@imobx.md';
         document.addEventListener('DOMContentLoaded', function() {
             console.log('IMOBX website loaded successfully');
             console.log('Current language: <?php echo $current_lang; ?>');
+            
+            // Clear form after successful submission
+            <?php if ($form_message_type === 'success'): ?>
+                // Optionally clear the form after successful submission
+                // The form is already cleared via PHP redirect
+            <?php endif; ?>
         });
     </script>
 </body>
