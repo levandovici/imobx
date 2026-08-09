@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>IMOBX</ShortName>
+  <Description>Professional web development services in Moldova, Romania, and Ukraine</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://imobx.md/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://imobx.md/?q={searchTerms}"/>
+  <Language>ru-ru</Language>
+  <Language>ro-ro</Language>
+  <Language>en-us</Language>
+  <Developer>IMOBX Team</Developer>
+  <Attribution>© 2025 IMOBX. All rights reserved.</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+  <AdultContent>false</AdultContent>
+  <Tags>web development, SEO, advertising, Moldova, Romania, Ukraine</Tags>
+</OpenSearchDescription>

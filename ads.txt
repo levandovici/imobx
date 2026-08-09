@@ -1,0 +1,14 @@
+# IMOBX.MD - ads.txt
+# Authorized Digital Sellers for IMOBX.MD
+# This file verifies authorized advertising sellers
+
+# Contact for advertising inquiries: contact@imobx.md
+
+# Example format (to be filled with actual publisher IDs):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# openx.com, 12345, DIRECT, 6a698e2ec38604c6
+
+# For direct advertising sales:
+# contact@imobx.md, DIRECT, c1234567890abcdef
+
+# Last updated: 2025-08-09

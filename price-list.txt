@@ -1,0 +1,214 @@
+Yes — if you're targeting **Moldova**, I would adjust the pricing significantly. The previous prices are more appropriate for Western markets. For Moldova, you can still sell relatively simple websites at good prices, but the offer should be packaged as a **complete business website/lead-generation package**, not just “a landing page.”
+
+I’d structure it like this:
+
+# Website Niches in Moldova — Where You Can Charge More
+
+If your goal is to build relatively simple websites and sell them at a good price in Moldova, I would focus on businesses where **one new customer is worth a lot of money**.
+
+## Top Niches
+
+| #  | Niche                         | Typical Website Price | Client Difficulty |  Potential |
+| -- | ----------------------------- | --------------------: | :---------------: | :--------: |
+| 1  | 🏗️ Construction & Renovation |           €600–1,500+ |        ⭐⭐⭐⭐       |  🔥🔥🔥🔥  |
+| 2  | 🏠 House Construction         |           €800–2,000+ |        ⭐⭐⭐        | 🔥🔥🔥🔥🔥 |
+| 3  | 🪟 Windows & Doors            |           €500–1,200+ |       ⭐⭐⭐⭐⭐       |   🔥🔥🔥   |
+| 4  | ❄️ HVAC / Air Conditioning    |           €500–1,500+ |       ⭐⭐⭐⭐⭐       |   🔥🔥🔥   |
+| 5  | 🔥 Heating / Boilers          |           €500–1,500+ |        ⭐⭐⭐⭐       |  🔥🔥🔥🔥  |
+| 6  | 🚿 Plumbing                   |           €400–1,000+ |       ⭐⭐⭐⭐⭐       |   🔥🔥🔥   |
+| 7  | ⚡ Electrical Services         |           €400–1,000+ |       ⭐⭐⭐⭐⭐       |   🔥🔥🔥   |
+| 8  | 🦷 Dental Clinics             |           €800–2,000+ |        ⭐⭐⭐        | 🔥🔥🔥🔥🔥 |
+| 9  | ⚖️ Law Firms                  |           €800–2,000+ |        ⭐⭐⭐        |  🔥🔥🔥🔥  |
+| 10 | 🏠 Real Estate Agencies       |           €700–1,500+ |        ⭐⭐⭐⭐       |  🔥🔥🔥🔥  |
+| 11 | 🏊 Swimming Pools             |           €600–1,500+ |        ⭐⭐⭐        |  🔥🔥🔥🔥  |
+| 12 | 🚗 Auto Repair / Body Shops   |           €500–1,200+ |        ⭐⭐⭐⭐       |   🔥🔥🔥   |
+| 13 | 🌳 Landscaping                |           €500–1,200+ |        ⭐⭐⭐⭐       |   🔥🔥🔥   |
+| 14 | 💆 Aesthetic / Beauty Clinics |           €700–2,000+ |        ⭐⭐⭐        |  🔥🔥🔥🔥  |
+| 15 | 🏭 B2B / Manufacturing        |         €1,000–3,000+ |         ⭐⭐        | 🔥🔥🔥🔥🔥 |
+
+These are **starting market ranges**, not fixed prices. A stronger portfolio, better design, SEO, advertising setup and lead-generation features allow you to charge more.
+
+---
+
+# What I Would Actually Sell
+
+Instead of selling:
+
+> "I will make you a website."
+
+Sell a **complete online presence / lead-generation package**.
+
+### Basic Package — €500–800
+
+**Landing page / business website**
+
+* Modern responsive design
+* Home / landing page
+* About the company
+* Services
+* Prices or price estimates
+* Projects / portfolio
+* Images
+* Customer reviews
+* Contact section
+* Contact form
+* Phone / WhatsApp / Messenger buttons
+* Google Maps
+* Mobile optimization
+* Basic SEO
+* Domain setup
+* SSL
+* Google Analytics
+* Google Search Console
+* Basic speed optimization
+
+### Professional Package — €800–1,500
+
+Everything from the Basic Package, plus:
+
+* More professional custom design
+* Multiple service sections/pages
+* Better SEO structure
+* Local SEO
+* Google Business Profile optimization
+* Conversion-focused landing page
+* Lead/contact forms
+* Tracking of phone clicks
+* Tracking of form submissions
+* Google Analytics setup
+* Search Console setup
+* Sitemap
+* Meta titles and descriptions
+* Image optimization
+* Basic Google Ads setup
+* 1–2 advertising campaigns
+* Monthly performance report
+
+### Premium Package — €1,500–3,000+
+
+For businesses where one customer is worth a lot of money:
+
+* Full website
+* Multiple landing pages
+* Advanced local SEO
+* Google Ads setup
+* Conversion tracking
+* Analytics dashboard
+* Professional copywriting
+* Professional image selection
+* Competitor research
+* Lead-generation strategy
+* Google Business Profile optimization
+* Ongoing SEO
+* Google Ads management
+* Monthly optimization
+
+---
+
+# Important: Google Ads Should NOT Be "20% of the Website Price"
+
+I would separate **website development** from **advertising management**.
+
+For example:
+
+**Website:** €1,000
+
+**Google Ads setup:** €200–300 one-time
+
+**Google Ads management:** €100–300/month
+
+**Advertising budget:** paid directly by the client to Google
+
+So you might tell the client:
+
+> Website: €1,000
+> Google Ads setup: €200
+> Google Ads management: €100/month
+> Google advertising budget: €300-500/month, paid directly to Google.
+
+This is much cleaner than saying Google Ads costs 20% of the website.
+
+---
+
+# Domain & Hosting
+
+You can also include:
+
+**Domain:** included for the first year
+
+**Hosting:** included for the first year or billed separately.
+
+Then after the first year you can charge an annual maintenance/hosting fee.
+
+For example:
+
+> Website maintenance & hosting: €150/year
+
+This creates **recurring revenue**, instead of making money only once from the website.
+
+---
+
+# The Best Offer for Moldova
+
+I wouldn't position yourself as a "web designer."
+
+I'd position yourself as:
+
+> **"I build websites that help local businesses get more calls and inquiries from Google."**
+
+For example, for a construction company:
+
+### Construction Website — €1,200
+
+**Website**
+
+* Landing page
+* About company
+* Services
+* Prices
+* Completed projects
+* Photos
+* Reviews
+* Contact form
+* Phone / WhatsApp
+* Google Maps
+
+**SEO**
+
+* Local SEO setup
+* Google Search Console
+* Sitemap
+* Meta titles/descriptions
+* Keyword optimization
+
+**Analytics**
+
+* Google Analytics
+* Conversion tracking
+* Phone-click tracking
+* Form-submission tracking
+
+**Google**
+
+* Google Business Profile optimization
+* Google Ads setup
+
+**Technical**
+
+* Domain
+* Hosting
+* SSL
+* Mobile optimization
+* Speed optimization
+
+That is a much stronger €1,200 offer than:
+
+> "I'll make you a landing page for €1,200."
+
+The client isn't really buying **a page**.
+
+They're buying a system that is supposed to **bring them customers**.
+
+For Moldova specifically, I'd start with **construction, roofing, windows/doors, HVAC/heating, dental clinics and renovation companies**. They are relatively easy to explain in terms of ROI: if the website generates even a few additional customers, the business can potentially recover the cost quickly.
+
+And I would make **Google Ads + SEO + analytics + domain + hosting + conversion tracking** part of the package structure, while keeping the actual advertising budget separate.

@@ -1,0 +1,40 @@
+/* IMOBX.MD - HUMANS.TXT
+   This file provides information about the website for human developers
+   and curious visitors who view the source code.
+
+TEAM
+-----
+Website: IMOBX.MD
+Contact: contact@imobx.md
+Phone: +37368690699
+Location: Chisinau, Republic of Moldova
+
+SERVICES
+--------
+Web Development
+Website Management
+Advertising Campaigns
+SEO Optimization
+Target Markets: Moldova, Romania, Ukraine
+
+TECHNOLOGY
+-----------
+Languages: PHP, HTML, CSS, JavaScript
+Design: Custom B2B Professional Design
+Multilingual: Russian, Romanian, English
+Responsive: Mobile-first approach
+
+STANDARDS
+----------
+SEO: Optimized for Moldova, Romania, Ukraine
+Accessibility: WCAG 2.1 compliant
+Performance: Optimized loading times
+Security: HTTPS, SSL, security headers
+
+LAST UPDATED
+------------
+2025-08-09
+
+For more information:
+https://imobx.md
+*/

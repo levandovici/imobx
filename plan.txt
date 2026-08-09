@@ -1,0 +1,1543 @@
+# IMOBX.MD — MASTER PRODUCT & DEVELOPMENT SPECIFICATION
+
+## 1. PROJECT OVERVIEW
+
+Build **IMOBX.MD**, a modern real estate platform focused specifically on the **Republic of Moldova**.
+
+IMOBX should not be just another real estate classifieds website.
+
+The main concept is:
+
+> **IMOBX helps people make better real estate decisions using property listings, market data, government statistics, calculators, comparisons, and verified official information.**
+
+The platform should eventually cover the entire real estate lifecycle:
+
+**Buy → Rent → Sell → Lease → Land → Build → Renovate → Invest → Compare → Verify**
+
+### IMPORTANT
+
+**Do NOT integrate AI/LLM functionality into the public website in V1.**
+
+However, the entire architecture and database must be designed so that AI/ML can be added later without rebuilding the platform.
+
+---
+
+# 2. BRAND
+
+## Brand name
+
+**IMOBX**
+
+## Domain
+
+**imobx.md**
+
+## Market
+
+**Republic of Moldova**
+
+## Primary languages
+
+The architecture must support:
+
+* Romanian
+* Russian
+* English
+
+The initial interface can be implemented in one language first, but all text must be prepared for localization.
+
+---
+
+# 3. BRAND POSITIONING
+
+IMOBX should feel like:
+
+> **The intelligent real estate infrastructure of Moldova.**
+
+Not:
+
+> "Another website with property listings."
+
+The platform should combine:
+
+* real estate marketplace;
+* market analytics;
+* property comparison;
+* construction calculator;
+* renovation calculator;
+* investment calculator;
+* land information;
+* official data;
+* property verification;
+* professional services.
+
+---
+
+# 4. VISUAL DESIGN DIRECTION
+
+The visual identity is extremely important.
+
+Do NOT create a generic real estate template.
+
+Do NOT make the website look like an old classifieds website.
+
+Do NOT copy 999.md or other existing Moldovan real estate websites.
+
+The design should feel like a combination of:
+
+* premium real estate platform;
+* modern fintech dashboard;
+* clean data/analytics product;
+* trustworthy government-information interface;
+* modern technology company.
+
+## Design personality
+
+The website should communicate:
+
+**Trust + Precision + Modern Technology + Simplicity + Professionalism**
+
+It should feel expensive and reliable without being luxurious or excessive.
+
+---
+
+# 5. UI STYLE
+
+Use:
+
+* clean layouts;
+* generous whitespace;
+* strong visual hierarchy;
+* modern cards;
+* subtle borders;
+* restrained shadows;
+* large readable typography;
+* rounded corners, but not excessive;
+* clear icons;
+* large property photography;
+* clean charts;
+* simple data tables;
+* modern filters;
+* smooth hover states;
+* subtle transitions.
+
+Avoid:
+
+* excessive gradients;
+* excessive glassmorphism;
+* neon colors;
+* huge shadows;
+* excessive animations;
+* cluttered interfaces;
+* overly colorful cards;
+* cheap-looking stock-template design.
+
+---
+
+# 6. COLOR SYSTEM
+
+Use a restrained professional palette.
+
+### Primary
+
+A deep dark/navy tone for:
+
+* header;
+* important text;
+* navigation;
+* primary UI elements.
+
+### Background
+
+Use:
+
+* white;
+* very light neutral gray;
+* subtle off-white sections.
+
+### Accent
+
+Use **one distinctive modern accent color** for:
+
+* CTA buttons;
+* links;
+* selected filters;
+* important data;
+* charts;
+* interactive elements.
+
+The accent should feel technological and trustworthy.
+
+Do not use many competing colors.
+
+### Semantic colors
+
+Use standard semantic colors only when necessary:
+
+* green = positive / verified / good;
+* yellow/orange = warning;
+* red = negative / risk;
+* gray = neutral / unavailable.
+
+---
+
+# 7. TYPOGRAPHY
+
+Use a modern sans-serif font.
+
+Typography should be:
+
+* highly readable;
+* professional;
+* modern;
+* suitable for Romanian, Russian and English;
+* optimized for desktop and mobile.
+
+Use a strong typographic hierarchy:
+
+* large hero heading;
+* clear section headings;
+* readable body text;
+* compact but legible data;
+* strong numerical typography for prices and statistics.
+
+Prices and statistics should be visually prominent.
+
+---
+
+# 8. LOGO
+
+The logo should be:
+
+**IMOBX**
+
+Use a clean modern wordmark.
+
+The logo should work in:
+
+* desktop header;
+* mobile header;
+* favicon;
+* social media;
+* property cards;
+* reports;
+* future mobile application.
+
+Do not create an overly complicated logo.
+
+---
+
+# 9. HOMEPAGE
+
+The homepage should immediately ask:
+
+# "What are you here to do?"
+
+Present three large entry points.
+
+### 🏠 I am looking for property
+
+For:
+
+* buyers;
+* renters;
+* investors.
+
+### 💼 I am an owner / seller
+
+For:
+
+* property owners;
+* landlords;
+* sellers;
+* land owners.
+
+### 🏢 I am a professional
+
+For:
+
+* real estate agencies;
+* developers;
+* construction companies;
+* renovation companies;
+* architects;
+* contractors;
+* property professionals.
+
+The three options should be visually distinct but part of the same design system.
+
+---
+
+# 10. CUSTOMER FLOW
+
+If the user selects:
+
+## "I am looking for property"
+
+Ask:
+
+### "What do you want to do?"
+
+Options:
+
+* Buy
+* Rent
+* Buy land
+* Build
+* Invest
+
+Then progressively show relevant functionality.
+
+---
+
+# 11. OWNER FLOW
+
+If the user selects:
+
+## "I am an owner / seller"
+
+Ask:
+
+### "What do you want to do?"
+
+Options:
+
+* Sell property
+* Rent out property
+* Sell land
+* Lease land
+* Estimate property value
+* Renovate
+* Build
+* Find professionals
+
+The interface should adapt to the selected goal.
+
+Do not overwhelm the user with every feature at once.
+
+---
+
+# 12. PROFESSIONAL FLOW
+
+If the user selects:
+
+## "I am a professional"
+
+Allow:
+
+* real estate agencies;
+* developers;
+* construction companies;
+* renovation companies;
+* architects;
+* contractors;
+* other professionals.
+
+Professional accounts can later offer:
+
+* property listings;
+* company profiles;
+* service listings;
+* leads;
+* analytics;
+* advertising;
+* promoted listings.
+
+---
+
+# 13. PROPERTY CATEGORIES
+
+Support:
+
+### Residential
+
+* apartments;
+* houses;
+* villas;
+* rooms;
+* garages.
+
+### Commercial
+
+* offices;
+* retail;
+* warehouses;
+* industrial;
+* restaurants;
+* other commercial properties.
+
+### Land
+
+* residential construction;
+* commercial construction;
+* agricultural;
+* investment;
+* other.
+
+### Development
+
+* new developments;
+* construction projects;
+* unfinished properties.
+
+---
+
+# 14. PROPERTY SEARCH
+
+Create a fast and modern search experience.
+
+Filters:
+
+* city;
+* district;
+* neighborhood;
+* price;
+* area;
+* rooms;
+* floor;
+* building floors;
+* year built;
+* property condition;
+* property type;
+* land area;
+* price per m²;
+* listing type.
+
+Search must support:
+
+* sorting;
+* pagination/infinite loading;
+* map view;
+* list view;
+* favorites;
+* comparison.
+
+---
+
+# 15. PROPERTY CARD
+
+Every property card should show:
+
+* main image;
+* price;
+* price per m²;
+* property type;
+* area;
+* rooms;
+* floor;
+* city/district;
+* short description;
+* listing source;
+* date updated;
+* favorite button;
+* compare button.
+
+Use a clean, premium card design.
+
+---
+
+# 16. PROPERTY DETAIL PAGE
+
+Property page should include:
+
+### Main information
+
+* photo gallery;
+* price;
+* price per m²;
+* area;
+* rooms;
+* floor;
+* building age;
+* condition;
+* location;
+* description.
+
+### Market context
+
+Show:
+
+* average price for comparable properties;
+* median price;
+* price per m²;
+* market range;
+* difference from market average.
+
+Example:
+
+> Listing price: €100,000
+> Comparable market median: €94,500
+> Difference: +5.8%
+
+This is statistical analysis, **not AI**.
+
+---
+
+# 17. PROPERTY COMPARISON
+
+Allow users to select multiple properties.
+
+Comparison should include:
+
+* total price;
+* price per m²;
+* area;
+* rooms;
+* floor;
+* condition;
+* year built;
+* location;
+* distance to key locations;
+* estimated rent;
+* potential yield.
+
+Create a clean comparison table.
+
+---
+
+# 18. RENTAL SECTION
+
+Rental categories:
+
+* apartments;
+* houses;
+* commercial;
+* land;
+* other.
+
+Show:
+
+* monthly rent;
+* price per m²;
+* area;
+* district;
+* condition;
+* listing information.
+
+If both sale and rental data are available, calculate:
+
+### Gross rental yield
+
+`Annual Rent / Property Price × 100`
+
+Example:
+
+€600 × 12 / €90,000 × 100 = 8%.
+
+Clearly label this as an **estimated gross yield**, not guaranteed investment return.
+
+---
+
+# 19. SELL / RENT OUT
+
+Owners should be able to create listings.
+
+Listing form:
+
+* property type;
+* transaction type;
+* city;
+* district;
+* address;
+* optional cadastral number;
+* area;
+* land area;
+* rooms;
+* floor;
+* building floors;
+* year built;
+* condition;
+* price;
+* description;
+* images;
+* contact details.
+
+Support:
+
+* drafts;
+* editing;
+* publishing;
+* unpublishing;
+* deleting;
+* listing status.
+
+---
+
+# 20. LAND
+
+Create a dedicated land marketplace.
+
+Show:
+
+* land area;
+* price;
+* price per m²;
+* price per sotka;
+* intended use;
+* location;
+* cadastral information where legally available;
+* road access;
+* utilities;
+* infrastructure;
+* other relevant characteristics.
+
+Market analytics:
+
+> Average price per sotka by region.
+
+---
+
+# 21. CONSTRUCTION CALCULATOR
+
+Create:
+
+# "Build a House"
+
+User enters:
+
+* city;
+* land area;
+* desired house area;
+* number of floors;
+* house type;
+* construction quality.
+
+Estimate:
+
+* design;
+* permits;
+* foundation;
+* structure;
+* walls;
+* roof;
+* windows;
+* doors;
+* electrical;
+* plumbing;
+* heating;
+* utilities;
+* interior finishing;
+* labor;
+* materials.
+
+Results must be shown as a **range**:
+
+> Estimated construction cost:
+> **€90,000 – €120,000**
+
+Never present estimates as guaranteed prices.
+
+---
+
+# 22. RENOVATION CALCULATOR
+
+Create:
+
+# "Renovation Calculator"
+
+Inputs:
+
+* city;
+* property area;
+* number of rooms;
+* current condition;
+* renovation level.
+
+Levels:
+
+* Economy
+* Standard
+* Premium
+
+Calculate separately:
+
+* demolition;
+* electrical;
+* plumbing;
+* heating;
+* plastering;
+* screed;
+* tiles;
+* flooring;
+* ceilings;
+* painting;
+* doors;
+* windows;
+* kitchen;
+* bathroom;
+* furniture;
+* materials;
+* labor.
+
+Show:
+
+### Materials
+
+### Labor
+
+### Total estimated budget
+
+Use ranges instead of false precision.
+
+---
+
+# 23. BUY + RENOVATE ANALYSIS
+
+This is one of the core IMOBX features.
+
+Example:
+
+Property:
+
+**€75,000**
+
+Renovation:
+
+**€25,000**
+
+Furniture/appliances:
+
+**€10,000**
+
+Total:
+
+**€110,000**
+
+Then compare with similar finished properties:
+
+**€105,000 – €120,000**
+
+Show:
+
+> Estimated total investment: €110,000
+> Comparable finished properties: €105,000–€120,000
+
+---
+
+# 24. LAND + BUILD ANALYSIS
+
+Allow users to compare:
+
+### Option A
+
+Buy finished house
+
+### Option B
+
+Buy old property + renovate
+
+### Option C
+
+Buy land + build
+
+### Option D
+
+Buy apartment + renovate
+
+Show:
+
+* purchase price;
+* land price;
+* renovation;
+* construction;
+* utilities;
+* estimated total;
+* estimated market value;
+* estimated rental income;
+* estimated gross yield.
+
+---
+
+# 25. PROPERTY VERIFICATION
+
+Create:
+
+# "Check Property"
+
+Allow user to enter:
+
+* address;
+* cadastral number.
+
+Potential information sources:
+
+* ASP;
+* e-Cadastru;
+* official cadastral systems;
+* official geospatial systems;
+* government portals;
+* tax services;
+* utility providers where legally available.
+
+Possible checks:
+
+* property characteristics;
+* cadastral information;
+* registered rights;
+* encumbrances;
+* technical information;
+* official documents;
+* tax information;
+* utility debt information where officially available.
+
+### LEGAL / PRIVACY REQUIREMENT
+
+Do NOT expose private owner information simply by entering an address unless the official source legally provides it for public access.
+
+Do NOT bypass:
+
+* authentication;
+* CAPTCHA;
+* access controls;
+* API restrictions;
+* robots restrictions;
+* security mechanisms.
+
+If authentication is required:
+
+> **Open official verification**
+
+and redirect the user to the official service.
+
+---
+
+# 26. GOVERNMENT DATA
+
+Create a dedicated data layer for official Moldovan statistics.
+
+Potential sources include:
+
+* National Bureau of Statistics of Moldova;
+* ASP;
+* official cadastral systems;
+* government geospatial portals;
+* official economic statistics;
+* official construction statistics;
+* official demographic statistics;
+* other government datasets.
+
+Every dataset must store:
+
+* source;
+* source URL;
+* publication date;
+* data period;
+* metric;
+* value;
+* unit;
+* import date.
+
+Never invent missing government data.
+
+---
+
+# 27. IMOBX MARKET
+
+Create a dedicated:
+
+# IMOBX MARKET
+
+dashboard.
+
+Users can select:
+
+* Moldova;
+* city;
+* district;
+* property type;
+* period.
+
+Show:
+
+* average price;
+* median price;
+* min/max;
+* price per m²;
+* average rent;
+* rental yield;
+* number of listings;
+* price change;
+* rental change;
+* land prices;
+* construction costs;
+* renovation costs.
+
+Charts:
+
+* 1 month;
+* 3 months;
+* 6 months;
+* 1 year;
+* 3 years;
+* 5 years.
+
+---
+
+# 28. PRICE HISTORY
+
+This is CRITICAL.
+
+Never overwrite historical prices.
+
+Store every observed price change.
+
+Example:
+
+```text
+€100,000 — Jan 01 2026
+€97,000  — Feb 15 2026
+€93,000  — Mar 20 2026
+€90,000  — May 01 2026
+```
+
+This will later enable:
+
+* price reduction detection;
+* market trend analysis;
+* time-on-market analysis;
+* overpricing detection;
+* market forecasting.
+
+---
+
+# 29. DATA COLLECTION
+
+IMOBX may collect data from:
+
+* official APIs;
+* official open datasets;
+* authorized data feeds;
+* permitted public sources;
+* partner feeds.
+
+Create:
+
+```text
+SOURCE
+   ↓
+API / IMPORTER
+   ↓
+RAW DATA
+   ↓
+NORMALIZATION
+   ↓
+DUPLICATE DETECTION
+   ↓
+IMOBX DATABASE
+   ↓
+ANALYTICS
+```
+
+Respect:
+
+* Terms of Service;
+* robots.txt;
+* copyright;
+* database rights;
+* privacy laws;
+* rate limits;
+* API restrictions.
+
+Do not bypass technical protections.
+
+---
+
+# 30. DUPLICATE DETECTION
+
+The same property may appear on multiple platforms.
+
+Detect potential duplicates using:
+
+* address;
+* price;
+* area;
+* rooms;
+* coordinates;
+* photos;
+* description;
+* property characteristics.
+
+V1 should use deterministic/rule-based similarity matching.
+
+Do NOT use AI for this initially.
+
+---
+
+# 31. DATABASE
+
+Use:
+
+**MySQL**
+
+Suggested initial entities:
+
+```text
+users
+roles
+properties
+property_images
+property_prices
+property_features
+property_types
+cities
+districts
+locations
+land_properties
+construction_costs
+renovation_costs
+services
+service_categories
+companies
+reviews
+favorites
+comparisons
+market_statistics
+government_data
+data_sources
+import_logs
+property_history
+```
+
+The schema can be extended when required.
+
+---
+
+# 32. USER ROLES
+
+### USER
+
+* search;
+* favorites;
+* comparisons;
+* contact owners;
+* create listings.
+
+### OWNER
+
+* manage properties;
+* publish listings;
+* edit listings;
+* manage leads.
+
+### PROFESSIONAL
+
+* company profile;
+* services;
+* portfolio;
+* leads;
+* reviews.
+
+### ADMIN
+
+* users;
+* properties;
+* listings;
+* sources;
+* imports;
+* statistics;
+* moderation;
+* government datasets;
+* system settings.
+
+---
+
+# 33. SERVICES MARKETPLACE
+
+Create a marketplace for:
+
+### Construction
+
+* construction companies;
+* architects;
+* engineers;
+* designers;
+* contractors.
+
+### Renovation
+
+* electricians;
+* plumbers;
+* tile installers;
+* painters;
+* plasterers;
+* flooring specialists;
+* window/door installers;
+* renovation companies.
+
+Each professional profile should include:
+
+* company/name;
+* description;
+* location;
+* service categories;
+* portfolio;
+* photos;
+* phone;
+* website;
+* rating;
+* reviews.
+
+---
+
+# 34. SEO
+
+Every property must have a unique URL.
+
+Example:
+
+`imobx.md/property/chisinau-botanica-2-room-apartment-12345`
+
+Generate SEO landing pages for:
+
+* apartments in Chisinau;
+* houses in Chisinau;
+* land in Chisinau;
+* apartments in Botanica;
+* rental apartments;
+* property prices;
+* price per m²;
+* construction costs;
+* renovation costs.
+
+Implement:
+
+* clean URLs;
+* dynamic metadata;
+* canonical URLs;
+* sitemap;
+* robots.txt;
+* Open Graph;
+* Schema.org structured data where appropriate.
+
+---
+
+# 35. RESPONSIVE DESIGN
+
+The website must be fully responsive.
+
+Desktop:
+
+* wide search;
+* analytical dashboards;
+* comparison tables;
+* large property galleries.
+
+Mobile:
+
+* simplified navigation;
+* large touch targets;
+* swipeable galleries;
+* easy filtering;
+* sticky contact actions;
+* simplified comparison.
+
+The mobile experience must NOT feel like a squeezed desktop version.
+
+---
+
+# 36. PERFORMANCE
+
+Prioritize performance.
+
+Requirements:
+
+* optimized images;
+* lazy loading;
+* caching;
+* pagination;
+* optimized SQL queries;
+* indexes;
+* minimized JS;
+* responsive image sizes.
+
+The homepage should load quickly even on slower mobile connections.
+
+---
+
+# 37. SECURITY
+
+Implement:
+
+* secure password hashing;
+* prepared SQL statements;
+* CSRF protection;
+* XSS protection;
+* server-side validation;
+* upload validation;
+* file size limits;
+* secure image handling;
+* authentication;
+* authorization;
+* rate limiting;
+* admin audit logs.
+
+Never trust browser-side validation alone.
+
+---
+
+# 38. TECHNOLOGY
+
+Keep V1 simple and maintainable.
+
+Preferred:
+
+### Backend
+
+PHP
+
+### Database
+
+MySQL
+
+### Frontend
+
+HTML
+CSS
+JavaScript
+
+A lightweight CSS/UI framework may be used if it improves development speed and consistency.
+
+Do not introduce unnecessary complexity.
+
+Do not use microservices unless there is a concrete technical reason.
+
+---
+
+# 39. FUTURE AI / ML ARCHITECTURE
+
+AI is intentionally excluded from V1.
+
+But design the data architecture for future ML.
+
+Future system:
+
+```text
+IMOBX DATA
+     ↓
+DATA CLEANING
+     ↓
+FEATURE ENGINEERING
+     ↓
+ML MODELS
+     ↓
+PREDICTIONS
+     ↓
+AI ASSISTANT
+```
+
+Potential future ML:
+
+* property valuation;
+* price prediction;
+* rental price prediction;
+* overpricing detection;
+* duplicate detection;
+* renovation cost prediction;
+* construction cost prediction;
+* investment scoring;
+* market forecasting.
+
+Potential future AI assistant:
+
+> "I have €100,000. Should I buy an apartment, buy land and build, or buy an old house and renovate?"
+
+The AI should eventually answer using **IMOBX's own structured data**, not unsupported guesses.
+
+---
+
+# 40. DATA-FIRST STRATEGY
+
+The most important long-term asset of IMOBX is not the UI.
+
+It is the **historical structured real estate database of Moldova**.
+
+Every relevant record should preserve:
+
+* value;
+* location;
+* property type;
+* date;
+* source;
+* historical changes.
+
+Especially preserve:
+
+### Property prices
+
+### Rental prices
+
+### Land prices
+
+### Construction costs
+
+### Renovation costs
+
+### Government statistics
+
+This historical dataset will become the foundation for future ML models.
+
+---
+
+# 41. MONETIZATION
+
+Architecture should support future monetization.
+
+### Owners
+
+* free listings;
+* promoted listings;
+* premium listings;
+* featured properties.
+
+### Agencies
+
+* professional accounts;
+* listing packages;
+* analytics;
+* promotion.
+
+### Professionals
+
+* paid profiles;
+* promoted services;
+* lead generation.
+
+### Data / Reports
+
+Potential future:
+
+* premium market reports;
+* detailed property reports;
+* advanced analytics;
+* professional tools.
+
+Do not implement complex payment infrastructure unless necessary for V1.
+
+---
+
+# 42. DEVELOPMENT PHASES
+
+## PHASE 1 — FOUNDATION
+
+Build:
+
+* PHP backend;
+* MySQL;
+* authentication;
+* users;
+* roles;
+* admin panel;
+* localization architecture;
+* core design system.
+
+## PHASE 2 — REAL ESTATE MARKETPLACE
+
+Build:
+
+* properties;
+* categories;
+* listings;
+* images;
+* search;
+* filters;
+* map;
+* favorites;
+* comparison.
+
+## PHASE 3 — MARKET ANALYTICS
+
+Build:
+
+* price/m²;
+* averages;
+* medians;
+* price history;
+* district statistics;
+* charts.
+
+## PHASE 4 — CALCULATORS
+
+Build:
+
+* mortgage;
+* rent/yield;
+* renovation;
+* construction;
+* land;
+* buy + renovate;
+* land + build.
+
+## PHASE 5 — GOVERNMENT DATA
+
+Connect official sources progressively.
+
+For each source verify:
+
+1. API availability;
+2. open-data availability;
+3. Terms of Use;
+4. robots.txt;
+5. authentication requirements;
+6. rate limits;
+7. permitted automated access.
+
+## PHASE 6 — SERVICES
+
+Build:
+
+* professional profiles;
+* construction services;
+* renovation services;
+* reviews;
+* leads.
+
+## PHASE 7 — SEO + MARKET INTELLIGENCE
+
+Build:
+
+* SEO pages;
+* structured data;
+* market dashboards;
+* analytics;
+* historical datasets.
+
+---
+
+# 43. WHAT NOT TO BUILD IN V1
+
+Do NOT build:
+
+* mobile application;
+* AI chatbot;
+* proprietary AI model;
+* complex AI recommendations;
+* social network;
+* unnecessary CRM;
+* microservices architecture;
+* excessive animations;
+* unnecessary complexity.
+
+Focus on building an excellent web platform first.
+
+---
+
+# 44. CORE USER EXPERIENCE
+
+The complete experience should look like this:
+
+```text
+IMOBX.MD
+    ↓
+WHO ARE YOU?
+
+🏠 LOOKING FOR PROPERTY
+💼 OWNER / SELLER
+🏢 PROFESSIONAL
+```
+
+### Looking for property
+
+```text
+BUY
+RENT
+LAND
+BUILD
+INVEST
+```
+
+↓
+
+Search / filters
+
+↓
+
+Property results
+
+↓
+
+Compare
+
+↓
+
+Market statistics
+
+↓
+
+Property verification
+
+↓
+
+Renovation / construction calculator
+
+↓
+
+Investment comparison
+
+---
+
+# 45. CORE PRODUCT PRINCIPLE
+
+IMOBX should not simply answer:
+
+> "What properties are available?"
+
+It should eventually answer:
+
+> **"What is the best real estate decision based on the available data?"**
+
+But V1 must achieve this through:
+
+**structured data + statistics + calculations + comparisons**
+
+and **NOT AI**.
+
+---
+
+# 46. MVP SUCCESS CRITERIA
+
+The first working version should allow a user to:
+
+1. Enter IMOBX.MD.
+2. Choose:
+
+   * Looking for property
+   * Owner / seller
+   * Professional
+3. Search properties.
+4. Filter properties.
+5. View property details.
+6. Save favorites.
+7. Compare properties.
+8. View price/m².
+9. View market statistics.
+10. See price history when available.
+11. Calculate renovation costs.
+12. Calculate construction costs.
+13. Calculate rental yield.
+14. Compare buy vs renovate vs build.
+15. Search land.
+16. Find professionals.
+17. Access available official property information.
+18. View government market statistics.
+19. Create and manage property listings.
+20. Manage everything through an admin panel.
+
+---
+
+# 47. FINAL DEVELOPMENT PRINCIPLE
+
+Build IMOBX as a **data-first real estate platform**, not as a simple classifieds clone.
+
+The priority is:
+
+**Clean UX → Reliable Data → Historical Data → Market Analytics → Calculators → Verification → Marketplace → ML → AI**
+
+AI comes later.
+
+The first version must already be useful without AI.
+
+The visual result must feel:
+
+**Modern. Clean. Premium. Trustworthy. Data-driven. Moldovan.**
+
+It should look like a serious technology company building the future infrastructure of the Moldovan real estate market.

@@ -1,0 +1,576 @@
+# ADDITIONAL MODULE — MAP & LOCATION INTELLIGENCE
+
+## 1. Interactive Property Map
+
+The IMOBX platform must include a fully interactive map as a core feature.
+
+The map should not be treated as a simple location preview.
+
+It should become one of the main tools for:
+
+* finding properties;
+* comparing locations;
+* analyzing neighborhoods;
+* understanding accessibility;
+* evaluating investment potential.
+
+---
+
+# 2. Map Providers
+
+The map architecture must be provider-independent.
+
+Create a map abstraction layer so the platform can use different providers in the future.
+
+Potential providers:
+
+* OpenStreetMap;
+* Mapbox;
+* Google Maps;
+* other legally available map providers.
+
+Do not hard-code the entire application around one provider.
+
+---
+
+# 3. Property Map Search
+
+Users should be able to switch between:
+
+### List View
+
+and
+
+### Map View
+
+Map view should display property markers.
+
+Example:
+
+```text
+┌─────────────────────────────────────────┐
+│ Search properties                       │
+├───────────────────────┬─────────────────┤
+│                       │                 │
+│ Property cards        │      MAP        │
+│                       │                 │
+│ €85,000               │    ● €85k       │
+│ 2 rooms               │        ● €92k   │
+│ 55 m²                 │                 │
+│                       │   ● €76k        │
+│ €95,000               │                 │
+│ 3 rooms               │                 │
+│ 68 m²                 │                 │
+└───────────────────────┴─────────────────┘
+```
+
+On mobile, allow switching between:
+
+**List / Map**
+
+---
+
+# 4. Map Filters
+
+Map results must respect the same search filters as the property list:
+
+* buy;
+* rent;
+* property type;
+* price;
+* area;
+* rooms;
+* condition;
+* city;
+* district;
+* land area;
+* price per m².
+
+When filters change, map markers should update.
+
+---
+
+# 5. Map Clustering
+
+If many properties are located close together, do not display hundreds of individual markers.
+
+Use marker clustering.
+
+Example:
+
+**127 properties**
+
+Clicking the cluster zooms into the area.
+
+---
+
+# 6. Property Location Page
+
+Every property detail page should contain a location section.
+
+Example:
+
+### Location
+
+**Chisinau, Botanica**
+
+Show:
+
+* exact location when appropriate;
+* approximate location when the owner chooses not to reveal the exact address;
+* nearby infrastructure;
+* transport;
+* walking distances.
+
+---
+
+# 7. "What's Nearby?"
+
+Create a dedicated feature:
+
+# What's Nearby?
+
+For each property calculate nearby locations.
+
+Categories:
+
+### 🚍 Public Transport
+
+* bus stops;
+* trolleybus stops;
+* minibus stops;
+* other public transport;
+* routes where legally/technically available.
+
+### 🚇 Major Transport
+
+Where applicable:
+
+* major transport hubs;
+* railway stations;
+* airport;
+* major roads.
+
+### 🏫 Education
+
+* schools;
+* kindergartens;
+* universities;
+* educational institutions.
+
+### 🏥 Healthcare
+
+* hospitals;
+* clinics;
+* pharmacies;
+* emergency medical facilities.
+
+### 🛒 Shopping
+
+* supermarkets;
+* markets;
+* shopping centers;
+* grocery stores.
+
+### 🍽️ Restaurants
+
+* restaurants;
+* cafés;
+* fast food.
+
+### 🏦 Services
+
+* banks;
+* ATMs;
+* post offices;
+* government offices.
+
+### 🌳 Recreation
+
+* parks;
+* playgrounds;
+* sports facilities;
+* gyms.
+
+---
+
+# 8. Public Transport Integration
+
+Create a specific module for public transportation data.
+
+The experience should be similar in usefulness to **eway.md**, but it should be integrated into the real estate experience.
+
+For every property, show:
+
+### Nearest public transport
+
+Example:
+
+```text
+🚎 Trolleybus stop
+120 m
+~2 min walk
+
+🚌 Bus stop
+250 m
+~3 min walk
+
+🚎 Trolleybus stop
+420 m
+~5 min walk
+```
+
+When possible, show:
+
+* transport type;
+* stop name;
+* distance;
+* estimated walking time;
+* available routes;
+* direction/destination.
+
+Do not assume that a route exists in the data.
+
+Only show verified/available transport information.
+
+---
+
+# 9. Transport Accessibility Score
+
+Create a statistical score based on measurable location data.
+
+Example:
+
+### Transport accessibility
+
+**88 / 100**
+
+Based on:
+
+* distance to nearest stop;
+* number of nearby stops;
+* number of available routes;
+* proximity to major transport hubs;
+* walking distance.
+
+The score must be transparent.
+
+Provide a tooltip or expandable section:
+
+> Score is calculated from measurable location data and does not represent an official government rating.
+
+Do NOT use AI in V1.
+
+---
+
+# 10. Walking Distance
+
+When possible, show actual walking distance rather than only straight-line distance.
+
+Example:
+
+Instead of:
+
+> 300 m away
+
+prefer:
+
+> **420 m — approximately 5 min walk**
+
+If routing data is unavailable, clearly label the value as approximate.
+
+---
+
+# 11. Neighborhood Analysis
+
+Create:
+
+# Neighborhood
+
+For each property, show relevant neighborhood information.
+
+Example:
+
+### Botanica
+
+**Average apartment price**
+€1,650 / m²
+
+**Average rent**
+€540 / month
+
+**Transport accessibility**
+88 / 100
+
+**Schools nearby**
+14
+
+**Supermarkets nearby**
+9
+
+**Parks nearby**
+4
+
+This combines real estate data with geographic data.
+
+---
+
+# 12. Distance to Important Locations
+
+Allow users to see distance to:
+
+* city center;
+* district center;
+* nearest public transport;
+* schools;
+* kindergartens;
+* hospitals;
+* supermarkets;
+* parks;
+* shopping centers;
+* major roads;
+* airport;
+* railway station.
+
+Use:
+
+* walking distance;
+* driving distance where available;
+* approximate travel time where available.
+
+---
+
+# 13. User Search by Location
+
+Allow the user to search:
+
+> "Properties within 500 m of a trolleybus stop"
+
+or use filters:
+
+### Maximum walking distance to public transport
+
+* 2 min
+* 5 min
+* 10 min
+* 15 min
+
+Other possible filters:
+
+### Near school
+
+### Near supermarket
+
+### Near park
+
+### Near hospital
+
+### Near city center
+
+This should work together with price and property filters.
+
+Example:
+
+> Apartment
+> ≤ €100,000
+> ≥ 50 m²
+> ≤ 5 min walk from public transport
+
+---
+
+# 14. Map Layers
+
+The map should support optional layers.
+
+Potential layers:
+
+* Properties;
+* Public transport;
+* Schools;
+* Kindergartens;
+* Hospitals;
+* Pharmacies;
+* Supermarkets;
+* Parks;
+* Roads;
+* Land parcels where legally available;
+* Development projects;
+* Construction projects.
+
+Users should be able to turn layers on/off.
+
+Do not display too many layers simultaneously by default.
+
+---
+
+# 15. Location-Based Property Comparison
+
+When comparing properties, include location quality.
+
+Example:
+
+| Feature     | Property A | Property B |
+| ----------- | ---------: | ---------: |
+| Price       |    €90,000 |    €95,000 |
+| Area        |      55 m² |      60 m² |
+| Price/m²    |     €1,636 |     €1,583 |
+| Transport   |      3 min |      8 min |
+| School      |      6 min |     12 min |
+| Supermarket |      4 min |      2 min |
+| Park        |      7 min |      3 min |
+
+This allows users to compare the **actual location**, not just the apartment itself.
+
+---
+
+# 16. Location Data Architecture
+
+Create a structured location database.
+
+Suggested entities:
+
+```text
+locations
+transport_stops
+transport_routes
+transport_types
+schools
+kindergartens
+hospitals
+pharmacies
+supermarkets
+shopping_centers
+restaurants
+banks
+parks
+roads
+points_of_interest
+```
+
+Every location should have, where available:
+
+* latitude;
+* longitude;
+* name;
+* category;
+* source;
+* source ID;
+* last updated date.
+
+---
+
+# 17. Geospatial Database
+
+The architecture should support geographic queries.
+
+Examples:
+
+```text
+Find all properties within 500 meters of a transport stop.
+
+Find all schools within 1 km.
+
+Find apartments within 10 minutes walking distance of public transport.
+
+Find land parcels near a major road.
+```
+
+If supported by the chosen database architecture, use spatial indexes and geographic coordinates efficiently.
+
+MySQL spatial capabilities may be used where appropriate.
+
+---
+
+# 18. Data Sources
+
+Use legally available sources.
+
+Potential sources:
+
+* OpenStreetMap / OpenStreetMap-based services;
+* official Moldovan geographic datasets;
+* public transport data;
+* government open data;
+* authorized APIs;
+* partner APIs;
+* other legally permitted sources.
+
+For each source store:
+
+* source name;
+* URL;
+* API/data endpoint;
+* license;
+* update frequency;
+* import date;
+* attribution requirements.
+
+Do not scrape or redistribute data where the license does not permit it.
+
+---
+
+# 19. Eway-like Functionality
+
+The goal is **not to copy eway.md**.
+
+Instead, take the useful concept of transport information and integrate it into IMOBX.
+
+Example:
+
+A user opens:
+
+**Apartment — Botanica — €95,000**
+
+IMOBX automatically displays:
+
+### Transport
+
+🚎 Trolleybus — 180 m / 2 min
+🚌 Bus — 350 m / 4 min
+🚎 Trolleybus — 520 m / 7 min
+
+### Nearby
+
+🏫 School — 400 m
+🛒 Supermarket — 250 m
+💊 Pharmacy — 180 m
+🌳 Park — 650 m
+
+### Location Score
+
+**Transport: 91/100**
+
+This should become a major differentiating feature of IMOBX.
+
+---
+
+# 20. Future Location Intelligence
+
+Do not implement AI in V1.
+
+But store enough structured geographic information to eventually calculate:
+
+* transport accessibility;
+* neighborhood quality;
+* investment attractiveness;
+* estimated rental demand;
+* property desirability;
+* location-based price prediction.
+
+Future AI/ML can combine:
+
+**Property Data + Market Data + Government Data + Geographic Data + Transport Data**
+
+to create more advanced property recommendations.
+
+---
+
+# 21. Important UX Principle
+
+The user should not have to open several external websites to understand whether a property has a good location.
+
+IMOBX should bring the important location information together:
+
+> **Property + Price + Market + Transport + Infrastructure + Verification + Construction/Renovation Costs**
+
+The goal is to make IMOBX a **complete decision-making platform for real estate in Moldova.**

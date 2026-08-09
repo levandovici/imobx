@@ -1,0 +1,128 @@
+# IMOBX.MD - Robots.txt
+# Web crawler configuration for search engines and AI bots
+
+# Sitemap location
+Sitemap: https://imobx.md/sitemap.xml
+
+# Default crawl delay (optional, respect server resources)
+Crawl-delay: 1
+
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Disallow sensitive directories and files
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.git/
+Disallow: /cache/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /config/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.well-known/
+
+# Allow specific important paths
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Google-specific instructions
+User-agent: Googlebot
+Allow: /
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Google News (if applicable)
+User-agent: Googlebot-News
+Allow: /
+
+# Bing-specific instructions
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yahoo-specific instructions
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo-specific instructions
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex-specific instructions (important for Russian-speaking markets)
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Baidu-specific instructions (important for Chinese market)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# AI and Large Language Model Crawlers
+# OpenAI (GPT)
+User-agent: GPTBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used for training many AI models)
+User-agent: CCBot
+Allow: /
+
+# Facebook/Meta
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter/X
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Apple (Siri/Safari)
+User-agent: Applebot
+Allow: /
+
+# Amazon (Alexa)
+User-agent: Amazonbot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# OpenAI's ChatGPT plugin crawler
+User-agent: ChatGPT-User
+Allow: /
+
+# Block specific bots if needed
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /
+
+# Additional SEO notes:
+# - This robots.txt allows legitimate search engines and AI crawlers
+# - It blocks access to sensitive files and directories
+# - Crawl delays help prevent server overload
+# - The sitemap location is specified for better indexing
+# - Regional bots (Yandex, Baidu) are specifically configured
