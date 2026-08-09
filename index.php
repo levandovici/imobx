@@ -421,8 +421,11 @@ $contact_email = 'contact@imobx.md';
     <!-- Canonical URL -->
     <link rel="canonical" href="https://imobx.md/<?php echo $current_lang === 'ru' ? '' : '?lang=' . $current_lang; ?>">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Favicons / Icons -->
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="512x512" href="logo-512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo-512.png">
+    <link rel="mask-icon" href="logo.svg" color="#1a365d">
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
@@ -432,12 +435,11 @@ $contact_email = 'contact@imobx.md';
     
     <!-- Microsoft Tile Configuration -->
     <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#1a365d">
+    <meta name="msapplication-TileImage" content="logo-512.png">
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#1a365d">
-    
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -543,6 +545,9 @@ $contact_email = 'contact@imobx.md';
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 28px;
             font-weight: 700;
             color: white;
@@ -550,8 +555,24 @@ $contact_email = 'contact@imobx.md';
             letter-spacing: -1px;
         }
 
+        .logo picture,
+        .logo img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+
         .logo:hover {
             color: var(--accent-color);
+            opacity: 0.95;
+        }
+
+        .logo:hover img {
+            opacity: 0.9;
+        }
+
+        footer .logo img {
+            height: 36px;
         }
 
         nav ul {
@@ -1021,7 +1042,14 @@ $contact_email = 'contact@imobx.md';
     <!-- Header -->
     <header>
         <div class="container header-content">
-            <a href="index.php" class="logo">IMOBX</a>
+            <a href="index.php" class="logo" aria-label="IMOBX">
+                <picture>
+                    <source srcset="logo.svg" type="image/svg+xml">
+                    <img src="logo-512.png" alt="IMOBX" width="40" height="40"
+                         srcset="logo-512.png 1x, logo-1254.png 2x">
+                </picture>
+                <span>IMOBX</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="#services"><?php echo $t['services_title']; ?></a></li>
@@ -1237,7 +1265,14 @@ $contact_email = 'contact@imobx.md';
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="logo">IMOBX</div>
+                <div class="logo" aria-label="IMOBX">
+                    <picture>
+                        <source srcset="logo.svg" type="image/svg+xml">
+                        <img src="logo-512.png" alt="IMOBX" width="36" height="36"
+                             srcset="logo-512.png 1x, logo-1254.png 2x">
+                    </picture>
+                    <span>IMOBX</span>
+                </div>
                 <div class="footer-links">
                     <a href="#services"><?php echo $t['services_title']; ?></a>
                     <a href="#why-us"><?php echo $t['why_us_title']; ?></a>

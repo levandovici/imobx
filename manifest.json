@@ -12,52 +12,70 @@
   "dir": "ltr",
   "icons": [
     {
-      "src": "/favicon-72x72.png",
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-96x96.png",
+      "src": "/logo-96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-128x128.png",
+      "src": "/logo-128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-144x144.png",
+      "src": "/logo-144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-152x152.png",
+      "src": "/logo-152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-192x192.png",
+      "src": "/logo-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-384x384.png",
+      "src": "/logo-384.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-512x512.png",
+      "src": "/logo-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "categories": [
@@ -75,7 +93,7 @@
       "url": "/#services",
       "icons": [
         {
-          "src": "/favicon-96x96.png",
+          "src": "/logo-96.png",
           "sizes": "96x96"
         }
       ]
@@ -87,7 +105,7 @@
       "url": "/#contact",
       "icons": [
         {
-          "src": "/favicon-96x96.png",
+          "src": "/logo-96.png",
           "sizes": "96x96"
         }
       ]
