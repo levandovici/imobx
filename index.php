@@ -394,7 +394,7 @@ $translations = [
 ];
 
 $t = $translations[$current_lang];
-$contact_phone = '+37368690699';
+$contact_phone = '+37369215845';
 $contact_email = 'contact@imobx.md';
 ?>
 <!DOCTYPE html>
@@ -449,7 +449,7 @@ $contact_email = 'contact@imobx.md';
         "name": "IMOBX",
         "description": "<?php echo $t['description']; ?>",
         "url": "https://imobx.md",
-        "telephone": "+37368690699",
+        "telephone": "+37369215845",
         "email": "contact@imobx.md",
         "address": {
             "@type": "PostalAddress",
