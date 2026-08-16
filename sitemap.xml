@@ -44,4 +44,364 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/" />
     </url>
     
+    <!-- House Construction Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/house-construction/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/house-construction/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/house-construction/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/house-construction/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/house-construction/" />
+    </url>
+    
+    <!-- House Construction - Romanian -->
+    <url>
+        <loc>https://imobx.md/house-construction/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/house-construction/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/house-construction/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/house-construction/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/house-construction/" />
+    </url>
+    
+    <!-- House Construction - English -->
+    <url>
+        <loc>https://imobx.md/house-construction/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/house-construction/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/house-construction/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/house-construction/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/house-construction/" />
+    </url>
+    
+    <!-- Dental Clinics Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/dental-clinics/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/dental-clinics/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/dental-clinics/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/dental-clinics/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/dental-clinics/" />
+    </url>
+    
+    <!-- Dental Clinics - Romanian -->
+    <url>
+        <loc>https://imobx.md/dental-clinics/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/dental-clinics/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/dental-clinics/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/dental-clinics/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/dental-clinics/" />
+    </url>
+    
+    <!-- Dental Clinics - English -->
+    <url>
+        <loc>https://imobx.md/dental-clinics/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/dental-clinics/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/dental-clinics/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/dental-clinics/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/dental-clinics/" />
+    </url>
+    
+    <!-- B2B Manufacturing Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/b2b-manufacturing/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/b2b-manufacturing/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/b2b-manufacturing/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/b2b-manufacturing/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/b2b-manufacturing/" />
+    </url>
+    
+    <!-- B2B Manufacturing - Romanian -->
+    <url>
+        <loc>https://imobx.md/b2b-manufacturing/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/b2b-manufacturing/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/b2b-manufacturing/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/b2b-manufacturing/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/b2b-manufacturing/" />
+    </url>
+    
+    <!-- B2B Manufacturing - English -->
+    <url>
+        <loc>https://imobx.md/b2b-manufacturing/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/b2b-manufacturing/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/b2b-manufacturing/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/b2b-manufacturing/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/b2b-manufacturing/" />
+    </url>
+    
+    <!-- Construction Renovation Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/construction-renovation/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/construction-renovation/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/construction-renovation/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/construction-renovation/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/construction-renovation/" />
+    </url>
+    
+    <!-- Construction Renovation - Romanian -->
+    <url>
+        <loc>https://imobx.md/construction-renovation/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/construction-renovation/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/construction-renovation/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/construction-renovation/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/construction-renovation/" />
+    </url>
+    
+    <!-- Construction Renovation - English -->
+    <url>
+        <loc>https://imobx.md/construction-renovation/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/construction-renovation/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/construction-renovation/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/construction-renovation/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/construction-renovation/" />
+    </url>
+    
+    <!-- Heating Boilers Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/heating-boilers/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/heating-boilers/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/heating-boilers/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/heating-boilers/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/heating-boilers/" />
+    </url>
+    
+    <!-- Heating Boilers - Romanian -->
+    <url>
+        <loc>https://imobx.md/heating-boilers/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/heating-boilers/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/heating-boilers/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/heating-boilers/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/heating-boilers/" />
+    </url>
+    
+    <!-- Heating Boilers - English -->
+    <url>
+        <loc>https://imobx.md/heating-boilers/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/heating-boilers/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/heating-boilers/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/heating-boilers/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/heating-boilers/" />
+    </url>
+    
+    <!-- Law Firms Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/law-firms/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/law-firms/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/law-firms/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/law-firms/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/law-firms/" />
+    </url>
+    
+    <!-- Law Firms - Romanian -->
+    <url>
+        <loc>https://imobx.md/law-firms/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/law-firms/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/law-firms/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/law-firms/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/law-firms/" />
+    </url>
+    
+    <!-- Law Firms - English -->
+    <url>
+        <loc>https://imobx.md/law-firms/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/law-firms/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/law-firms/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/law-firms/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/law-firms/" />
+    </url>
+    
+    <!-- Real Estate Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/real-estate/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/real-estate/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/real-estate/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/real-estate/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/real-estate/" />
+    </url>
+    
+    <!-- Real Estate - Romanian -->
+    <url>
+        <loc>https://imobx.md/real-estate/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/real-estate/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/real-estate/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/real-estate/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/real-estate/" />
+    </url>
+    
+    <!-- Real Estate - English -->
+    <url>
+        <loc>https://imobx.md/real-estate/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/real-estate/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/real-estate/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/real-estate/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/real-estate/" />
+    </url>
+    
+    <!-- Swimming Pools Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/swimming-pools/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/swimming-pools/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/swimming-pools/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/swimming-pools/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/swimming-pools/" />
+    </url>
+    
+    <!-- Swimming Pools - Romanian -->
+    <url>
+        <loc>https://imobx.md/swimming-pools/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/swimming-pools/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/swimming-pools/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/swimming-pools/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/swimming-pools/" />
+    </url>
+    
+    <!-- Swimming Pools - English -->
+    <url>
+        <loc>https://imobx.md/swimming-pools/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/swimming-pools/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/swimming-pools/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/swimming-pools/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/swimming-pools/" />
+    </url>
+    
+    <!-- Aesthetic Clinics Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/aesthetic-clinics/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/aesthetic-clinics/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/aesthetic-clinics/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/aesthetic-clinics/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/aesthetic-clinics/" />
+    </url>
+    
+    <!-- Aesthetic Clinics - Romanian -->
+    <url>
+        <loc>https://imobx.md/aesthetic-clinics/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/aesthetic-clinics/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/aesthetic-clinics/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/aesthetic-clinics/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/aesthetic-clinics/" />
+    </url>
+    
+    <!-- Aesthetic Clinics - English -->
+    <url>
+        <loc>https://imobx.md/aesthetic-clinics/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/aesthetic-clinics/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/aesthetic-clinics/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/aesthetic-clinics/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/aesthetic-clinics/" />
+    </url>
+    
+    <!-- Windows Doors Niche - Russian (Default) -->
+    <url>
+        <loc>https://imobx.md/windows-doors/</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/windows-doors/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/windows-doors/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/windows-doors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/windows-doors/" />
+    </url>
+    
+    <!-- Windows Doors - Romanian -->
+    <url>
+        <loc>https://imobx.md/windows-doors/?lang=ro</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/windows-doors/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/windows-doors/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/windows-doors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/windows-doors/" />
+    </url>
+    
+    <!-- Windows Doors - English -->
+    <url>
+        <loc>https://imobx.md/windows-doors/?lang=en</loc>
+        <lastmod>2025-08-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://imobx.md/windows-doors/" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://imobx.md/windows-doors/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://imobx.md/windows-doors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://imobx.md/windows-doors/" />
+    </url>
+    
 </urlset>

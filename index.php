@@ -162,6 +162,16 @@ $translations = [
         'why_us_4_desc' => 'Оптимизация для Молдовы, Румынии и Украины',
         'portfolio_title' => 'Наши проекты',
         'portfolio_subtitle' => 'Примеры работ для различных отраслей',
+        'portfolio_house_construction' => 'Строительство домов',
+        'portfolio_dental_clinics' => 'Стоматологические клиники',
+        'portfolio_b2b_manufacturing' => 'B2B / Производство',
+        'portfolio_construction_renovation' => 'Строительство и ремонт',
+        'portfolio_heating_boilers' => 'Отопление и котлы',
+        'portfolio_law_firms' => 'Юридические фирмы',
+        'portfolio_real_estate' => 'Агентства недвижимости',
+        'portfolio_swimming_pools' => 'Бассейны',
+        'portfolio_aesthetic_clinics' => 'Эстетические клиники',
+        'portfolio_windows_doors' => 'Окна и двери',
         'process_title' => 'Как мы работаем',
         'process_subtitle' => 'Прозрачный процесс от идеи до запуска',
         'process_1_title' => 'Консультация',
@@ -271,6 +281,16 @@ $translations = [
         'why_us_4_desc' => 'Optimizare pentru Moldova, România și Ucraina',
         'portfolio_title' => 'Proiectele noastre',
         'portfolio_subtitle' => 'Exemple de lucru pentru diverse industrii',
+        'portfolio_house_construction' => 'Construcție case',
+        'portfolio_dental_clinics' => 'Clinici stomatologice',
+        'portfolio_b2b_manufacturing' => 'B2B / Producție',
+        'portfolio_construction_renovation' => 'Construcție și renovare',
+        'portfolio_heating_boilers' => 'Încălzire și boilere',
+        'portfolio_law_firms' => 'Firme de avocatură',
+        'portfolio_real_estate' => 'Agenții imobiliare',
+        'portfolio_swimming_pools' => 'Piscine',
+        'portfolio_aesthetic_clinics' => 'Clinici estetice',
+        'portfolio_windows_doors' => 'Ferestre și uși',
         'process_title' => 'Cum lucrăm',
         'process_subtitle' => 'Proces transparent de la idee la lansare',
         'process_1_title' => 'Consultație',
@@ -380,6 +400,16 @@ $translations = [
         'why_us_4_desc' => 'Optimization for Moldova, Romania and Ukraine',
         'portfolio_title' => 'Our Projects',
         'portfolio_subtitle' => 'Work examples for various industries',
+        'portfolio_house_construction' => 'House Construction',
+        'portfolio_dental_clinics' => 'Dental Clinics',
+        'portfolio_b2b_manufacturing' => 'B2B / Manufacturing',
+        'portfolio_construction_renovation' => 'Construction Renovation',
+        'portfolio_heating_boilers' => 'Heating Boilers',
+        'portfolio_law_firms' => 'Law Firms',
+        'portfolio_real_estate' => 'Real Estate Agencies',
+        'portfolio_swimming_pools' => 'Swimming Pools',
+        'portfolio_aesthetic_clinics' => 'Aesthetic Clinics',
+        'portfolio_windows_doors' => 'Windows Doors',
         'process_title' => 'How We Work',
         'process_subtitle' => 'Transparent process from idea to launch',
         'process_1_title' => 'Consultation',
@@ -811,6 +841,49 @@ $contact_email = 'contact@imobx.md';
             font-size: 15px;
         }
 
+        /* Portfolio Section */
+        .portfolio {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .portfolio-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 8px;
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: var(--text-dark);
+            display: block;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent-color);
+        }
+
+        .portfolio-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0;
+        }
+
         /* Process Section */
         .process {
             padding: 80px 0;
@@ -1064,6 +1137,7 @@ $contact_email = 'contact@imobx.md';
                 <ul>
                     <li><a href="#services"><?php echo $t['services_title']; ?></a></li>
                     <li><a href="#why-us"><?php echo $t['why_us_title']; ?></a></li>
+                    <li><a href="#portfolio"><?php echo $t['portfolio_title']; ?></a></li>
                     <li><a href="#process"><?php echo $t['process_title']; ?></a></li>
                     <li><a href="#contact"><?php echo $t['contact_title']; ?></a></li>
                 </ul>
@@ -1162,6 +1236,59 @@ $contact_email = 'contact@imobx.md';
                     <h3><?php echo $t['why_us_4_title']; ?></h3>
                     <p><?php echo $t['why_us_4_desc']; ?></p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2><?php echo $t['portfolio_title']; ?></h2>
+                <p><?php echo $t['portfolio_subtitle']; ?></p>
+            </div>
+
+            <div class="portfolio-grid">
+                <a href="house-construction/" class="portfolio-card">
+                    <div class="portfolio-icon">🏠</div>
+                    <h3><?php echo $t['portfolio_house_construction']; ?></h3>
+                </a>
+                <a href="dental-clinics/" class="portfolio-card">
+                    <div class="portfolio-icon">🦷</div>
+                    <h3><?php echo $t['portfolio_dental_clinics']; ?></h3>
+                </a>
+                <a href="b2b-manufacturing/" class="portfolio-card">
+                    <div class="portfolio-icon">🏭</div>
+                    <h3><?php echo $t['portfolio_b2b_manufacturing']; ?></h3>
+                </a>
+                <a href="construction-renovation/" class="portfolio-card">
+                    <div class="portfolio-icon">🏗️</div>
+                    <h3><?php echo $t['portfolio_construction_renovation']; ?></h3>
+                </a>
+                <a href="heating-boilers/" class="portfolio-card">
+                    <div class="portfolio-icon">🔥</div>
+                    <h3><?php echo $t['portfolio_heating_boilers']; ?></h3>
+                </a>
+                <a href="law-firms/" class="portfolio-card">
+                    <div class="portfolio-icon">⚖️</div>
+                    <h3><?php echo $t['portfolio_law_firms']; ?></h3>
+                </a>
+                <a href="real-estate/" class="portfolio-card">
+                    <div class="portfolio-icon">🏡</div>
+                    <h3><?php echo $t['portfolio_real_estate']; ?></h3>
+                </a>
+                <a href="swimming-pools/" class="portfolio-card">
+                    <div class="portfolio-icon">🏊</div>
+                    <h3><?php echo $t['portfolio_swimming_pools']; ?></h3>
+                </a>
+                <a href="aesthetic-clinics/" class="portfolio-card">
+                    <div class="portfolio-icon">💆</div>
+                    <h3><?php echo $t['portfolio_aesthetic_clinics']; ?></h3>
+                </a>
+                <a href="windows-doors/" class="portfolio-card">
+                    <div class="portfolio-icon">🪟</div>
+                    <h3><?php echo $t['portfolio_windows_doors']; ?></h3>
+                </a>
             </div>
         </div>
     </section>
