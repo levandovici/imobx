@@ -1039,6 +1039,16 @@ $contact_email = 'contact@imobx.md';
     </style>
 </head>
 <body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XGRM0W468L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XGRM0W468L');
+</script>
+
     <!-- Header -->
     <header>
         <div class="container header-content">
